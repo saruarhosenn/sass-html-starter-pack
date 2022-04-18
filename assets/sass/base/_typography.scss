@@ -1,0 +1,73 @@
+@import "./variables";
+
+/* 
+==================================
+Font Family
+==================================
+*/
+.primary-font-700 {
+  font-family: $primary-font-700;
+}
+
+.primary-font-600 {
+  font-family: $primary-font-600;
+}
+
+.primary-font-500 {
+  font-family: $primary-font-500;
+}
+
+.primary-font-400 {
+  font-family: $primary-font-400;
+}
+
+.secondary-font-700 {
+  font-family: $secondary-font-700;
+}
+
+.secondary-font-600 {
+  font-family: $secondary-font-600;
+}
+
+.secondary-font-500 {
+  font-family: $secondary-font-500;
+}
+
+.secondary-font-400 {
+  font-family: $secondary-font-400;
+}
+
+/* 
+==================================
+Font Size
+==================================
+*/
+.size-xxl {
+  font-size: $size-xxl;
+  line-height: 1.4;
+}
+
+.size-xl {
+  font-size: $size-xl;
+  line-height: 1.4;
+}
+
+.size-lg {
+  font-size: $size-lg;
+  line-height: 1.4;
+}
+
+.size-md {
+  font-size: $size-md;
+  line-height: 1.4;
+}
+
+.size-sm {
+  font-size: $size-sm;
+  line-height: 1.4;
+}
+
+.size-xsm {
+  font-size: $size-xsm;
+  line-height: 1.4;
+}

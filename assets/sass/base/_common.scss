@@ -1,0 +1,159 @@
+@import "./variables";
+
+html {
+  font-size: 62.5%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  @media (max-width: 1199px) {
+    font-size: 60.5%;
+  }
+  @media (max-width: 991px) {
+    font-size: 50.5%;
+  }
+  @media (max-width: 450px) {
+    font-size: 40.5%;
+  }
+}
+
+body {
+  font-family: $primary-font-400;
+  font-size: $size-xsm;
+  color: $primary-color;
+  background-color: $primary-bg;
+  line-height: 1.5;
+  overflow-x: hidden;
+}
+
+/* 
+==================================
+Bacic Setup
+==================================
+*/
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.x-hideen {
+  overflow-x: hidden;
+}
+
+a,
+span,
+label {
+  display: inline-block;
+}
+
+ul {
+  list-style: none;
+}
+
+a,
+a:focus {
+  text-decoration: none;
+}
+
+button:focus,
+input:focus,
+textarea:focus,
+button,
+input,
+textarea {
+  outline: 0;
+  border: 0;
+}
+
+button,
+input,
+textarea {
+  background-color: transparent;
+}
+
+button {
+  cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul,
+hr {
+  margin: 0;
+  padding: 0;
+}
+
+hr {
+  opacity: 1;
+  background-color: transparent;
+}
+
+.transition-linear {
+  -webkit-transition: all 0.4s linear;
+  -o-transition: all 0.4s linear;
+  transition: all 0.4s linear;
+}
+
+a,
+button,
+img,
+.transition-ease-in-out {
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+/* 
+==================================
+Section Top & Bottom Padding
+==================================
+*/
+.sec-pt-100 {
+  padding-top: 100px;
+  @media (max-width: 575px) {
+    padding-top: 45px;
+  }
+}
+
+.sec-pb-100 {
+  padding-bottom: 100px;
+  @media (max-width: 575px) {
+    padding-bottom: 45px;
+  }
+}
+
+.sec-py-100 {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  @media (max-width: 575px) {
+    padding-top: 45px;
+    padding-bottom: 45px;
+  }
+}
+
+/* 
+===============================
+Back to top Btn
+===============================
+*/
+#scroll-up-btn {
+  opacity: 0;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 99;
+  background-color: $primary-color;
+  width: 40px;
+  height: 40px;
+}
